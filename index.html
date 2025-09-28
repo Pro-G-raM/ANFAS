@@ -3,18 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="media.css">
   <title>ANFAS</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header-top">
+  <section class="vertical_line">
+    <a href="https://github.com/Pro-G-raM/ANFAS" target="_blank">
+      <img src="Vector.png" alt="portfolio" class="github_icon">
+    </a>
+  </section>
+  <header class="section">
+    <div class="header_top">
       <div class="logo">
-        <a href="#"><img src="Logo.png" alt="logo">ANFAS</a>
+        <a href="#" class="header_logo"><img src="Logo.png" alt="logo"> ANFAS</a>
+      </div>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="mobile_menu">
+      <a href="#"><span>#</span>home</a>
+      <a href="#"><span>#</span>works</a>
+      <a href="#"><span>#</span>about-me</a>
+      <a href="#"><span>#</span>contacts</a>
+      <select id="language-mobile">
+        <option value="ru">EN</option>
+        <option value="en">RU</option>
+        <option value="kz">KZ</option>
+      </select>
+    </nav>
+      <div class="header_menu">
+        <a href="#"><span>#</span>home</a>
+        <a href="#"><span>#</span>works</a>
+        <a href="#"><span>#</span>about-me</a>
+        <a href="#"><span>#</span>contacts</a>
+        <select id="language" name="language">
+          <option value="ru">EN</option>
+          <option value="en">RU</option>
+          <option value="kz">KZ</option>
+        </select>
       </div>
     </div>
-    <div class="header-bottom">
-
+    <div class="header_bottom">
+      <div class="header_content">
+        <h1 class="header_title">Anfas is a <span class="header_span">cyber security</span> and <span class="header_span">front-end developer</span></h1>
+        <p class="header_subtitle">He crafts responsive websites where technologies meet creativity</p>
+        <a href="#"><button class="header_btn">Contact me!</button></a>
+      </div>
+      <div class="header_portfolio">
+        <img src="human.png" alt="me">
+        <div class="header_portfolio_subtitle">
+          Currently working on Portfolio
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <p class="quote_title quote_border"><span>Code is easier to write than to read</span></p>
+      <p class="quote_subtitle quote_border"> - Baga</p>
     </div>
   </header>
+  <script>
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.mobile_menu');
+
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

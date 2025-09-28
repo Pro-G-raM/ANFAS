@@ -1,1 +1,209 @@
+html, body {
+  background-color: #282C33;
+  color: #fff;
+}
+
+.vertical_line {
+  position: absolute;  
+  top: 0;                 
+  left: 30px;              
+  width: 1px;           
+  height: 190px;        
+  background-color: #fff;   
+}
+
+.github_icon {
+  position: absolute;
+  bottom: -20%;     
+  left: 0;       
+  transform: translateX(-50%); 
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+.section{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.header_logo{
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.header_menu span {
+  color: #C778DD;
+}
+.header_menu a, select {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #ABB2BF;
+  transition: color 0.5s ease;
+}
+.header_menu a:hover {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.header_menu select{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header_menu select option{
+  border: 0;
+  background-color: #282C33;
+}
+
+.header_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title{
+  max-width: 520px;
+  font-size: 32px;
+}
+
+.header_span{
+  color: #C778DD;
+}
+
+.header_subtitle{
+  color: #ABB2BF;
+  margin: 32px 0 24px;
+}
+
+.header_btn {
+  color: #fff;
+  padding: 8px 34px;
+  border: 1px solid #C778DD;
+  background-color: transparent ;
+  cursor: pointer;
+  transition: color 0.6s ease;
+  transition: background-color 0.8s ease;
+}
+.header_btn:hover {
+  color: #000;
+  background-color: #C778DD;
+}
+
+.header_portfolio_subtitle {
+  border: 1px solid silver;
+  padding: 8px 80px 8px 16px;
+}
+
+.header_portfolio_subtitle::before {
+  content: "";            
+  display: inline-block;   
+  width: 16px;              
+  height: 16px;           
+  background-color: #C778DD;  
+  margin-right: 3px;        
+  vertical-align: -2.4px
+}
+
+.header_portfolio img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.quote {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 70px;
+  font-size: 24px;
+}
+
+.quote_border {
+  border: 1px solid silver;
+  padding: 32px;
+  margin: 0;
+}
+
+.quote_title::before{
+  content: url('covich.png');
+  position: relative;
+  top: -43px;
+  left: -20px;
+}
+.quote_title::after{
+  content: url('covich.png');
+  position: relative;
+  bottom: -48px;
+  right: -20px;
+}
+
+.quote_subtitle{
+  padding: 16px;
+}
+.mobile_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #282C33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 28px;
+  color: #fff;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 999;
+}
+
+.mobile_menu a, .mobile_menu select {
+  color: #ABB2BF;
+  text-decoration: none;
+}
+
+.mobile_menu.active {
+  transform: translateY(0);
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+}
 
