@@ -3,6 +3,10 @@ html, body {
   color: #fff;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .vertical_line {
   position: absolute;  
   top: 0;                 
@@ -172,7 +176,7 @@ html, body {
   background: #282C33;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 30px;
   font-size: 28px;
@@ -180,7 +184,16 @@ html, body {
   transform: translateY(-100%);
   transition: transform 0.5s ease;
   z-index: 999;
+  padding-left: 50px;
 }
+
+.mobile_menu span{
+  color:#C778DD;
+}
+#language-mobile{
+    background-color: transparent;
+    border: none;
+  }
 
 .mobile_menu a, .mobile_menu select {
   color: #ABB2BF;

@@ -3,8 +3,12 @@
     display: none; 
   }
 
+  .header_logo{
+    font-size: 20px;
+  }
+
   .vertical_line {
-    display: none; 
+    display: none;
   }
 
   .burger {

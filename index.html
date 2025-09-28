@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>ANFAS</title>
 </head>
 <body>
   <section class="vertical_line">
     <a href="https://github.com/Pro-G-raM/ANFAS" target="_blank">
-      <img src="Vector.png" alt="portfolio" class="github_icon">
+      <img src="img/Vector.png" alt="portfolio" class="github_icon">
     </a>
   </section>
   <header class="section">
     <div class="header_top">
       <div class="logo">
-        <a href="https://github.com/Pro-G-raM/ANFAS" class="header_logo"><img src="Logo.png" alt="logo"> ANFAS</a>
+        <a href="https://github.com/Pro-G-raM/ANFAS" class="header_logo"><img src="img/Logo.png" alt="logo"> ANFAS</a>
       </div>
       <div class="burger">
         <span></span>
@@ -25,16 +25,20 @@
         <span></span>
       </div>
       <nav class="mobile_menu">
-      <a href="#"><span>#</span>home</a>
-      <a href="#"><span>#</span>works</a>
-      <a href="#"><span>#</span>about-me</a>
-      <a href="#"><span>#</span>contacts</a>
-      <select id="language-mobile">
-        <option value="ru">EN</option>
-        <option value="en">RU</option>
-        <option value="kz">KZ</option>
-      </select>
-    </nav>
+        <a href="https://github.com/Pro-G-raM/ANFAS" class="header_logo"><img src="img/Logo.png" alt="logo"> ANFAS</a>
+        <a href="#"><span>#</span>home</a>
+        <a href="#"><span>#</span>works</a>
+        <a href="#"><span>#</span>about-me</a>
+        <a href="#"><span>#</span>contacts</a>
+        <select id="language-mobile">
+          <option value="ru">EN</option>
+          <option value="en">RU</option>
+          <option value="kz">KZ</option>
+        </select>
+        <a href="https://github.com/Pro-G-raM/ANFAS" target="_blank">
+          <img src="img/mobile_Vector.png" alt="portfolio" class="mobile_icon">
+        </a>
+      </nav>
       <div class="header_menu">
         <a href="#"><span>#</span>home</a>
         <a href="#"><span>#</span>works</a>
@@ -54,7 +58,7 @@
         <a href="https://t.me/Program166" target="_blank"><button class="header_btn">Contact me!</button></a>
       </div>
       <div class="header_portfolio">
-        <img src="human.png" alt="me">
+        <img src="img/human.png" alt="me">
         <div class="header_portfolio_subtitle">
           Currently working on Portfolio
         </div>
@@ -65,13 +69,6 @@
       <p class="quote_subtitle quote_border"> - Baga</p>
     </div>
   </header>
-  <script>
-    const burger = document.querySelector('.burger');
-    const mobileMenu = document.querySelector('.mobile_menu');
-
-    burger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
