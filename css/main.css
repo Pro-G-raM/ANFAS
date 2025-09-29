@@ -19,6 +19,8 @@ body.no-scroll {
 
 .auto{
   margin-top: auto;
+  text-decoration: none;
+  color: #fff;
 }
 
 .link {
