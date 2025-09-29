@@ -19,6 +19,9 @@ body.no-scroll {
 
 .auto{
   margin-top: auto;
+}
+
+.a {
   text-decoration: none;
   color: #fff;
 }
