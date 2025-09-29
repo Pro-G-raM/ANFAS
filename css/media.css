@@ -27,6 +27,18 @@
     align-items: center;
     margin-bottom: 50px;
   }
+  .projects_link{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects_link_object{
+    margin: 20px 0;
+  }
+
+  .projects_title h2::after {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 @media (max-width: 600px) {
   .header_title{
@@ -34,5 +46,27 @@
   }
   .quote{
     font-size: 16px;
+  }
+  .quote_title{
+    padding: 20px;
+  }
+  .projects_title h2::after {
+    width: 100%;
+    max-width: 150px;
+    left: 120px;
+  }
+  .projects_link_object{
+    max-width: 280px;
+  }
+}
+@media (max-width: 400px) {
+  .projects_title h2::after {
+    max-width: 100px;
+  }
+  .quote_title::after{
+    display: none;
+  }
+  .quote_title::before{
+    display: none;
   }
 }
